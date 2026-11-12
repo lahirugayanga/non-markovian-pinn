@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: process.env.VITE_BASE_PATH || "/non-markovian-pinn",
   worker: { format: 'es' },
 });
